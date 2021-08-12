@@ -119,32 +119,52 @@ header {
   justify-self: end;
 }
 
+button {
+  width: 204px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
-a, button {
-  font-family: 'Raleway', sans-serif;;
+a {
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: black;
   font-size: 13px;
   font-weight: 600;
 }
 
-h1, h2, p {
+p {
   font-family: 'Oswald', sans-serif;
+  color: black;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 h2 {
+  font-family: 'Oswald', sans-serif;
   font-size: 60px;
+  color: black;
+  margin-bottom: 0;
 }
 
 
 .banner {
   height: calc(100vh - 92px);
   width: 100%;
-  background: mediumvioletred;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(/img/banner.jpg);
+  background-size: cover;
 }
 
 .banner-button {
@@ -156,8 +176,126 @@ h2 {
 .specials {
   height: 100vh;
   display: grid;
-  grid-template-rows: 30% 70%;
-  align-content: center;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  justify-items: center;
+}
+
+.specials-button {
+  margin-top: 70px;
+}
+
+.specials-div {
+  margin-left: 70px;
+}
+
+
+.collections {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  align-items: center;
+  justify-items: center;
+}
+
+.center {
+  margin-left: 50px;
+}
+
+.carousel {
+  margin: 20px;
+}
+
+.carousel__view {
+  width: calc((200px*4) + 22px);
+  height: 300px;
+  background: white;
+  box-shadow: 0 1px 8px #888888;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel__control {
+  position: absolute;
+  z-index: 1;
+  height: 300px;
+  width: 70px;
+  background-color: rgba(221, 221, 221, 0.5);
+  transition: background-color .3s;
+  display: table;
+}
+
+.carousel__control .icon {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.carousel__control:hover {
+  background-color: rgba(221, 221, 221, 0.8);
+}
+
+.carousel__control:first-of-type {
+  left: 0;
+}
+
+.carousel__control:last-of-type {
+  right: 0;
+}
+
+.product-list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transition: transform .3s;
+  transform: translateX(0px);
+  list-style: none;
+  height: 300px;
+}
+
+.product-list__item {
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+}
+
+.product {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.product span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.product[data-slide="1"] {
+  background-color: blue;
+}
+
+.product[data-slide="2"] {
+  background-color: green;
+}
+
+.product[data-slide="3"] {
+  background-color: yellow;
+}
+
+.product[data-slide="4"] {
+  background-color: orange;
+}
+
+.product[data-slide="5"] {
+  background-color: red;
+}
+
+.product[data-slide="6"] {
+  background-color: pink;
 }
 
 /* ==========================================================================
