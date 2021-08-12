@@ -107,7 +107,7 @@ header {
   margin-left: 15px;
 }
 
-.menu-item {
+.menu-item-shop, .menu-item-collections {
   margin-right: 100px;
 }
 
@@ -120,10 +120,22 @@ header {
 }
 
 
-a {
+a, button {
+  font-family: 'Raleway', sans-serif;;
   text-decoration: none;
   color: black;
+  font-size: 13px;
+  font-weight: 600;
 }
+
+h1, h2, p {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 60px;
+}
+
 
 .banner {
   height: calc(100vh - 92px);
