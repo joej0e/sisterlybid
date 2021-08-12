@@ -92,10 +92,11 @@ header {
   margin-right: 70px;
   height: 92px;
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 45% 10% 45%;
   align-items: center;
   justify-items: center;
 }
+
 
 .logo {
   height: 60px;
@@ -103,7 +104,21 @@ header {
 
 .menu-icon {
   height: 17px;
+  margin-left: 15px;
 }
+
+.menu-item {
+  margin-right: 100px;
+}
+
+.grid-cell-left {
+  justify-self: start;
+}
+
+.grid-cell-right {
+  justify-self: end;
+}
+
 
 a {
   text-decoration: none;
