@@ -27,6 +27,11 @@ html {
  * Customize the background color to match your design.
  */
 
+body {
+  height: 100vh;
+  width: 100%;
+}
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -143,8 +148,7 @@ a {
 p {
   font-family: 'Oswald', sans-serif;
   color: black;
-  color: black;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
 }
 
@@ -152,7 +156,16 @@ h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 60px;
   color: black;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  color: black;
+  margin: 0 0 -10px;
+  padding: 0;
 }
 
 
@@ -198,10 +211,98 @@ h2 {
   justify-items: center;
 }
 
-.center {
+.collections-center {
   margin-left: 50px;
 }
 
+.categories {
+  display: grid;
+  grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+  column-gap: 1%;
+}
+
+.categories-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 7%;
+  padding-top: 7%;
+  gap: 10%;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  font-family: 'Raleway', sans-serif;
+  width: 20em;
+}
+
+.sister-lybid-insta-master {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.sister-lybid-insta {
+  display: grid;
+  grid-template-columns: 32.6% 32.6% 32.6%;
+  grid-gap: 1%;
+}
+
+
+.footer {
+  background: black;
+  margin-top: 1%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 16.3% 16.3% 16.3% 48%;
+  gap: 0.5%;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+padding-bottom: 75px;
+}
+
+.footer-div-title {
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0;
+  font-size: 15px;
+  color: white;font-family: 'Raleway', sans-serif;
+}
+
+.footer-div-stay-in-known {
+
+  font-weight: 400;
+  font-size: 20px;
+  color: white;font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+.footer-div-a {
+  color: white;
+  margin-top: 15px;
+  font-weight: 200;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+img {
+  margin: 0;
+  padding: 0;
+}
 .carousel {
   margin: 20px;
 }
